@@ -15,7 +15,7 @@ layout: default
     {% if page.profile %}
     <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
       {% if page.profile.image %}
-        {% raw %} {% responsive_image_block %}{% endraw %}
+        {% responsive_image_block %}
           path: {{ page.profile.image | prepend: 'assets/img/' }}
           class: "img-fluid z-depth-1 rounded"
         {% endresponsive_image_block %}
