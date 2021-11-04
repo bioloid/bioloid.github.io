@@ -11,5 +11,4 @@ elif [ "$1" = "update" ]; then
 	git add .
 	git commit -m "Update: $2"
 	git push
-	
 fi
