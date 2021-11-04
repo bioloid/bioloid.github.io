@@ -9,7 +9,7 @@ elif [ "$1" = "update" ]; then
 	sudo cp -r _site/* ../tmp/bioloid.github.io/
 	cd ../tmp/bioloid.github.io
 	git add .
-	git rm script
+	git rm script 
 	git rm README.md
 	git commit -m "Update: $2"
 	git push
