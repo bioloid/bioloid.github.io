@@ -1,8 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const mode_toggle = document.getElementById("light-toggle");
+    const modeToggle = document.getElementById('light-toggle');
+    if (!modeToggle) {
+        return;
+    }
 
-    mode_toggle.addEventListener("click", function() {
-        toggleTheme(localStorage.getItem("theme"));
+    updateThemeToggle(modeToggle);
+
+    modeToggle.addEventListener('click', function() {
+        toggleTheme();
+        updateThemeToggle(modeToggle);
     });
 });
 
