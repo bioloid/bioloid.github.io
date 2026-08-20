@@ -86,7 +86,7 @@ footer.sticky-bottom { border-top: 1px solid var(--global-divider-color); paddin
 
 .publications { margin-top: 2rem; }
 
-.publications ol.bibliography { list-style: none; margin: 0; padding-left: 0.3rem; }
+.publications ol.bibliography { list-style: none; margin: 0; padding: 0; }
 
 .publications ol.bibliography li { margin-bottom: 1rem; }
 
